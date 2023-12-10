@@ -69,5 +69,7 @@ Q를 누르면 적의 공격에서 안전해질 수 있다.
 옷과 빨래 바구니: 옷을 빨래 바구니에 담아 세탁기로 가져가면 엄마의 주의를 끌 수 있다.
 
 ## 게임 플레이 영상
-![play_video](https://github.com/MarriedSenior/Toy-Game/assets/55696059/260f890b-a99b-42f8-a48b-0c915c8418b9)"
+<p align="center">
+  <img src="[이미지URL](https://forclass.s3.amazonaws.com/%EC%A0%9C%EB%AA%A9+%EC%97%86%EB%8A%94+%EB%94%94%EC%9E%90%EC%9D%B8.gif)https://forclass.s3.amazonaws.com/%EC%A0%9C%EB%AA%A9+%EC%97%86%EB%8A%94+%EB%94%94%EC%9E%90%EC%9D%B8.gif">
+</p>
 
