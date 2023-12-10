@@ -70,6 +70,6 @@ Q를 누르면 적의 공격에서 안전해질 수 있다.
 
 ## 게임 플레이 영상
 <p align="center">
-  <img src="[이미지URL](https://forclass.s3.amazonaws.com/%EC%A0%9C%EB%AA%A9+%EC%97%86%EB%8A%94+%EB%94%94%EC%9E%90%EC%9D%B8.gif)https://forclass.s3.amazonaws.com/%EC%A0%9C%EB%AA%A9+%EC%97%86%EB%8A%94+%EB%94%94%EC%9E%90%EC%9D%B8.gif">
+  <img src="https://forclass.s3.amazonaws.com/%EC%A0%9C%EB%AA%A9+%EC%97%86%EB%8A%94+%EB%94%94%EC%9E%90%EC%9D%B8.gif">
 </p>
 
