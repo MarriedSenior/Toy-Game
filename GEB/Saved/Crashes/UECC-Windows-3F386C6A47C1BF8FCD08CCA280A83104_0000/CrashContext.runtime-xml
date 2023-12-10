@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+<RuntimeProperties>
+<CrashVersion>3</CrashVersion>
+<ExecutionGuid>FB5AB89E4DCD47A816404D8D5DB9A279</ExecutionGuid>
+<CrashGUID>UECC-Windows-3F386C6A47C1BF8FCD08CCA280A83104_0000</CrashGUID>
+<IsEnsure>true</IsEnsure>
+<IsStall>false</IsStall>
+<IsAssert>false</IsAssert>
+<CrashType>Ensure</CrashType>
+<ErrorMessage>Ensure condition failed: false [File:D:\build\++UE5\Sync\Engine\Source\Runtime\Experimental\Chaos\Private\Chaos\TriangleMeshImplicitObject.cpp] [Line: 1285]
+
+Stack: 
+0x00007ff67521e938 GEB.exe!&lt;lambda_97f9d1b0e563e74c11e8f1fa5a0e3589&gt;::operator()&lt;TArray&lt;Chaos::TVector&lt;unsigned short,3&gt;,TSizedDefaultAllocator&lt;32&gt; &gt; &gt;() []
+0x00007ff675219e64 GEB.exe!&lt;lambda_42bedec13fe2482e9fd2664c481b7d6c&gt;::operator()&lt;TArray&lt;Chaos::TVector&lt;unsigned short,3&gt;,TSizedDefaultAllocator&lt;32&gt; &gt; &gt;() []
+0x00007ff6752beffe GEB.exe!Chaos::FTriangleMeshImplicitObject::SweepGeomImp&lt;Chaos::FCapsule&gt;() []
+0x00007ff67535ba58 GEB.exe!Chaos::FTriangleMeshImplicitObject::SweepGeom() []
+0x00007ff674d4c460 GEB.exe!Chaos::TImplicitObjectScaled&lt;Chaos::FTriangleMeshImplicitObject,1&gt;::LowLevelSweepGeom&lt;Chaos::FCapsule&gt;() []
+0x00007ff6755606d7 GEB.exe!Chaos::SweepQuery&lt;Chaos::FCapsule&gt;() []
+0x00007ff67556ca98 GEB.exe!TSQVisitor&lt;Chaos::FCapsule,Chaos::FAccelerationStructureHandle,ChaosInterface::FSweepHit&gt;::Visit&lt;1&gt;() []
+0x00007ff674840872 GEB.exe!Chaos::TAABBTree&lt;Chaos::FAccelerationStructureHandle,Chaos::TAABBTreeLeafArray&lt;Chaos::FAccelerationStructureHandle,1,double&gt;,1,double&gt;::QueryImp&lt;1,Chaos::FQueryFastData,Chaos::TSpatialVisitor&lt;Chaos::FAccelerationStructureHandle,double&gt; &gt;() []
+0x00007ff6752bde93 GEB.exe!Chaos::TSpatialAccelerationCollectionHelper&lt;0,3,Chaos::TSpatialTypeTuple&lt;Chaos::TAABBTree&lt;Chaos::FAccelerationStructureHandle,Chaos::TAABBTreeLeafArray&lt;Chaos::FAccelerationStructureHandle,1,double&gt;,1,double&gt;,Chaos::TBoundingVolume&lt;Chaos::FAccelerationStructureHandle,double,3&gt;,Chaos::TAABBTree&lt;Chaos::FAccelerationStructureHandle,Chaos::TBoundingVolume&lt;Chaos::FAccelerationStructureHandle,double,3&gt;,1,double&gt; &gt;,Chaos::FAccelerationStructureHandle,double,3&gt;::SweepFast&lt;Chaos::TSpatialVisitor&lt;Chaos::FAccelerationStructureHandle,double&gt; &gt;() []
+0x00007ff67535b287 GEB.exe!Chaos::TSpatialAccelerationCollection&lt;Chaos::TAABBTree&lt;Chaos::FAccelerationStructureHandle,Chaos::TAABBTreeLeafArray&lt;Chaos::FAccelerationStructureHandle,1,double&gt;,1,double&gt;,Chaos::TBoundingVolume&lt;Chaos::FAccelerationStructureHandle,double,3&gt;,Chaos::TAABBTree&lt;Chaos::FAccelerationStructureHandle,Chaos::TBoundingVolume&lt;Chaos::FAccelerationStructureHandle,double,3&gt;,1,double&gt; &gt;::Sweep() []
+0x00007ff675557fbd GEB.exe!SweepHelper&lt;Chaos::FCapsule&gt;() []
+0x00007ff6755f75a0 GEB.exe!FChaosSQAccelerator::Sweep() []
+0x00007ff676affa23 GEB.exe!TSceneCastCommon&lt;TSQTraits&lt;ChaosInterface::FSweepHit,1,0&gt;,FGeomSQAdditionalInputs&gt;() []
+0x00007ff676b22361 GEB.exe!FGenericPhysicsInterface::GeomSweepSingle() []
+0x00007ff676b3f408 GEB.exe!UWorld::SweepSingleByChannel() []
+0x00007ff676b6f058 GEB.exe!UCharacterMovementComponent::FloorSweepTest() []
+0x00007ff676b64554 GEB.exe!UCharacterMovementComponent::ComputeFloorDist() []
+0x00007ff676b6e7e5 GEB.exe!UCharacterMovementComponent::FindFloor() []
+0x00007ff676b87685 GEB.exe!UCharacterMovementComponent::PhysWalking() []
+0x00007ff676ba5fe4 GEB.exe!UCharacterMovementComponent::StartNewPhysics() []
+0x00007ff676b82b90 GEB.exe!UCharacterMovementComponent::PerformMovement() []
+0x00007ff676b6532b GEB.exe!UCharacterMovementComponent::ControlledCharacterMove() []
+0x00007ff676ba8ab0 GEB.exe!UCharacterMovementComponent::TickComponent() []
+0x00007ff676b47e43 GEB.exe!FFormatArgsTrace::EncodeArguments&lt;3072,wchar_t const * __ptr64,double,double,double,double,double,double,double,double,double,float,wchar_t const * __ptr64,wchar_t const * __ptr64,wchar_t const * __ptr64,unsigned int&gt;() []
+0x00007ff676b6c042 GEB.exe!FActorComponentTickFunction::ExecuteTick() []
+0x00007ff6777d151b GEB.exe!FTickFunctionTask::DoTask() []
+0x00007ff6777d6515 GEB.exe!TGraphTask&lt;FTickFunctionTask&gt;::ExecuteTask() []
+0x00007ff671d85014 GEB.exe!FNamedTaskThread::ProcessTasksNamedThread() []
+0x00007ff671d854ae GEB.exe!FNamedTaskThread::ProcessTasksUntilQuit() []
+0x00007ff671d8d2c5 GEB.exe!FTaskGraphCompatibilityImplementation::WaitUntilTasksComplete() []
+0x00007ff6777e43e8 GEB.exe!FTickTaskSequencer::ReleaseTickGroup() []
+0x00007ff6777e9067 GEB.exe!FTickTaskManager::RunTickGroup() []
+0x00007ff67700880f GEB.exe!UWorld::RunTickGroup() []
+0x00007ff67700f622 GEB.exe!UWorld::Tick() []
+0x00007ff676e3db1c GEB.exe!UGameEngine::Tick() []
+0x00007ff6707d18f7 GEB.exe!FEngineLoop::Tick() []
+0x00007ff6707e924c GEB.exe!GuardedMain() []
+0x00007ff6707e931a GEB.exe!GuardedMainWrapper() []
+0x00007ff6707ec39c GEB.exe!LaunchWindowsStartup() []
+0x00007ff6707fdb54 GEB.exe!WinMain() []
+0x00007ff678a811aa GEB.exe!__scrt_common_main_seh() [D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+0x00007fffc8b7257d KERNEL32.DLL!UnknownFunction []
+0x00007fffc9e8aa58 ntdll.dll!UnknownFunction []
+</ErrorMessage>
+<CrashReporterMessage></CrashReporterMessage>
+<ProcessId>48188</ProcessId>
+<SecondsSinceStart>4</SecondsSinceStart>
+<IsInternalBuild>false</IsInternalBuild>
+<IsPerforceBuild>false</IsPerforceBuild>
+<IsSourceDistribution>false</IsSourceDistribution>
+<GameName>UE5-GEB</GameName>
+<ExecutableName>GEB</ExecutableName>
+<BuildConfiguration>Development</BuildConfiguration>
+<GameSessionID></GameSessionID>
+<PlatformName>Windows</PlatformName>
+<PlatformNameIni>Windows</PlatformNameIni>
+<EngineMode>Game</EngineMode>
+<EngineModeEx>Unset</EngineModeEx>
+<DeploymentName></DeploymentName>
+<EngineVersion>5.0.3-20979098+++UE5+Release-5.0</EngineVersion>
+<CommandLine> GEB</CommandLine>
+<LanguageLCID>0</LanguageLCID>
+<AppDefaultLocale>ko-KR</AppDefaultLocale>
+<BuildVersion>++UE5+Release-5.0-CL-20979098</BuildVersion>
+<Symbols>**UE5*Release-5.0-CL-20979098-Win64-Development</Symbols>
+<IsUERelease>false</IsUERelease>
+<IsRequestingExit>false</IsRequestingExit>
+<UserName></UserName>
+<BaseDir>C:/Users/dot_mario/Perforce/hun_kbh-desktop_18/Build/5/Windows/GEB/Binaries/Win64/</BaseDir>
+<RootDir>C:/Users/dot_mario/Perforce/hun_kbh-desktop_18/Build/5/Windows/</RootDir>
+<MachineId>97913BA14726BD4F56A5E6B20435B2D0</MachineId>
+<LoginId>97913ba14726bd4f56a5e6b20435b2d0</LoginId>
+<EpicAccountId>2765f79ce75f4f009d33a986106fc99e</EpicAccountId>
+<SourceContext></SourceContext>
+<UserDescription></UserDescription>
+<UserActivityHint></UserActivityHint>
+<CrashDumpMode>0</CrashDumpMode>
+<GameStateName></GameStateName>
+<Misc.NumberOfCores>16</Misc.NumberOfCores>
+<Misc.NumberOfCoresIncludingHyperthreads>24</Misc.NumberOfCoresIncludingHyperthreads>
+<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+<Misc.CPUBrand>12th Gen Intel(R) Core(TM) i9-12900K</Misc.CPUBrand>
+<Misc.PrimaryGPUBrand>NVIDIA GeForce RTX 3080</Misc.PrimaryGPUBrand>
+<Misc.OSVersionMajor>Windows 11 (23H2) [10.0.22631.2715]</Misc.OSVersionMajor>
+<Misc.OSVersionMinor></Misc.OSVersionMinor>
+<MemoryStats.TotalPhysical>34104791040</MemoryStats.TotalPhysical>
+<MemoryStats.TotalVirtual>50666950656</MemoryStats.TotalVirtual>
+<MemoryStats.PageSize>4096</MemoryStats.PageSize>
+<MemoryStats.TotalPhysicalGB>32</MemoryStats.TotalPhysicalGB>
+<MemoryStats.AvailablePhysical>13441384448</MemoryStats.AvailablePhysical>
+<MemoryStats.AvailableVirtual>7708946432</MemoryStats.AvailableVirtual>
+<MemoryStats.UsedPhysical>1042984960</MemoryStats.UsedPhysical>
+<MemoryStats.PeakUsedPhysical>1048682496</MemoryStats.PeakUsedPhysical>
+<MemoryStats.UsedVirtual>2516897792</MemoryStats.UsedVirtual>
+<MemoryStats.PeakUsedVirtual>2516897792</MemoryStats.PeakUsedVirtual>
+<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+<NumMinidumpFramesToIgnore>6</NumMinidumpFramesToIgnore>
+<CallStack></CallStack>
+<PCallStack>
+GEB       0x00007ff66fcf0000 + 552e938         
+GEB       0x00007ff66fcf0000 + 5529e64         
+GEB       0x00007ff66fcf0000 + 55ceffe         
+GEB       0x00007ff66fcf0000 + 566ba58         
+GEB       0x00007ff66fcf0000 + 505c460         
+GEB       0x00007ff66fcf0000 + 58706d7         
+GEB       0x00007ff66fcf0000 + 587ca98         
+GEB       0x00007ff66fcf0000 + 4b50872         
+GEB       0x00007ff66fcf0000 + 55cde93         
+GEB       0x00007ff66fcf0000 + 566b287         
+GEB       0x00007ff66fcf0000 + 5867fbd         
+GEB       0x00007ff66fcf0000 + 59075a0         
+GEB       0x00007ff66fcf0000 + 6e0fa23         
+GEB       0x00007ff66fcf0000 + 6e32361         
+GEB       0x00007ff66fcf0000 + 6e4f408         
+GEB       0x00007ff66fcf0000 + 6e7f058         
+GEB       0x00007ff66fcf0000 + 6e74554         
+GEB       0x00007ff66fcf0000 + 6e7e7e5         
+GEB       0x00007ff66fcf0000 + 6e97685         
+GEB       0x00007ff66fcf0000 + 6eb5fe4         
+GEB       0x00007ff66fcf0000 + 6e92b90         
+GEB       0x00007ff66fcf0000 + 6e7532b         
+GEB       0x00007ff66fcf0000 + 6eb8ab0         
+GEB       0x00007ff66fcf0000 + 6e57e43         
+GEB       0x00007ff66fcf0000 + 6e7c042         
+GEB       0x00007ff66fcf0000 + 7ae151b         
+GEB       0x00007ff66fcf0000 + 7ae6515         
+GEB       0x00007ff66fcf0000 + 2095014         
+GEB       0x00007ff66fcf0000 + 20954ae         
+GEB       0x00007ff66fcf0000 + 209d2c5         
+GEB       0x00007ff66fcf0000 + 7af43e8         
+GEB       0x00007ff66fcf0000 + 7af9067         
+GEB       0x00007ff66fcf0000 + 731880f         
+GEB       0x00007ff66fcf0000 + 731f622         
+GEB       0x00007ff66fcf0000 + 714db1c         
+GEB       0x00007ff66fcf0000 + ae18f7          
+GEB       0x00007ff66fcf0000 + af924c          
+GEB       0x00007ff66fcf0000 + af931a          
+GEB       0x00007ff66fcf0000 + afc39c          
+GEB       0x00007ff66fcf0000 + b0db54          
+GEB       0x00007ff66fcf0000 + 8d911aa         
+KERNEL32  0x00007fffc8b60000 + 1257d           
+ntdll     0x00007fffc9e30000 + 5aa58           
+</PCallStack>
+<PCallStackHash>4CEA3AE89A176830F918D7B019F3C5FAAFCC779B</PCallStackHash>
+</RuntimeProperties>
+<PlatformProperties>
+<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+<IsRunningOnBattery>false</IsRunningOnBattery>
+<PlatformCallbackResult>0</PlatformCallbackResult>
+</PlatformProperties>
+<EngineData>
+<MatchingDPStatus_Windows>No errors</MatchingDPStatus_Windows>
+<RHI.IntegratedGPU>false</RHI.IntegratedGPU>
+<RHI.D3DDebug>false</RHI.D3DDebug>
+<RHI.Aftermath>false</RHI.Aftermath>
+<RHI.IsGPUOverclocked>false</RHI.IsGPUOverclocked>
+<RHI.RHIName>D3D11</RHI.RHIName>
+<RHI.AdapterName>NVIDIA GeForce RTX 3080</RHI.AdapterName>
+<RHI.UserDriverVersion>545.84</RHI.UserDriverVersion>
+<RHI.InternalDriverVersion>31.0.15.4584</RHI.InternalDriverVersion>
+<RHI.DriverDate>10-11-2023</RHI.DriverDate>
+<RHI.FeatureLevel>SM5</RHI.FeatureLevel>
+<RHI.GPUVendor>NVIDIA</RHI.GPUVendor>
+<RHI.DriverBlacklisted>false</RHI.DriverBlacklisted>
+<DeviceProfile.Name>Windows</DeviceProfile.Name>
+<Platform.AppHasFocus>true</Platform.AppHasFocus>
+</EngineData>
+<GameData>
+</GameData>
+</FGenericCrashContext>
