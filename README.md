@@ -70,5 +70,5 @@ Q를 누르면 적의 공격에서 안전해질 수 있다.
 
 ## 게임 플레이 영상
 <p align="center">
-  <img src="https://github.com/MarriedSenior/Toy-Game/issues/2">
+  <img src="[https://github.com/MarriedSenior/Toy-Game/issues/2](https://github.com/MarriedSenior/Toy-Game/issues/2#issue-2034382660)https://github.com/MarriedSenior/Toy-Game/issues/2#issue-2034382660">
 </p>
