@@ -11,6 +11,10 @@
 게임 규칙2 : 적 아빠, 엄마는 플레이어의 움직임을 인식하면 장난감이 움직이는 것을 이상하게 여기고 쫓아가 공격한다. 공격에 당하면 게임 오버.
 <br>
 
+## 게임 다운로드
+
+https://drive.google.com/file/d/1XYcAkEU9fH5M2A3BiN1JVWLnS1cAx-90/view?usp=sharing
+
 ## 특징
 -아기자기한 로우폴리 디자인
 
